@@ -1,0 +1,19 @@
+datasource db {
+  provider     = "mysql"
+  url          = env("DB_URL")
+  relationMode = "prisma"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model SensorData {
+  id          Int      @id @default(autoincrement())
+  temperature Float
+  humidity    Float
+  pressure    Float
+  createdAt   DateTime @default(now())
+
+  @@map("sensorMockData")
+}
