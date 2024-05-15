@@ -17,13 +17,10 @@ The "server" folder contains the backend code of the application. To set up the 
 
 1. Navigate to the "server" folder.
 2. Run 'npm install' or 'npm i' to install all the required packages.
-3. After installation, configure the local MySQL database connection by setting the DB_URL environment variable.
-   For example: DB_URL="mysql://root:password@localhost:3306/schemaName".
-   _Note: Replace 'schemaName' with the name of your database schema. If you don't have a schema yet, create a new one and replace 'schemaName' with its name._
-4. Run 'prisma migrate dev' to apply any pending migrations to your local development database.
-5. Run 'prisma generate' to generate Prisma Client, ensuring your database access code is up-to-date.
-6. Start the server by running 'npm start'.
-7. The server will start running on the specified port, typically http://localhost:8000.
+3. Run 'prisma migrate dev' to apply any pending migrations to your local development database.
+4. Run 'prisma generate' to generate Prisma Client, ensuring your database access code is up-to-date.
+5. Start the server by running 'npm start'.
+6. The server will start running on the specified port, typically http://localhost:8000.
 
 **Script**
 
